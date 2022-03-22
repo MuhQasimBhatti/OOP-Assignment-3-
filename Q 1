@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+class Int
+{
+	int x;
+public:
+	Int()
+	{
+		x = 0;
+	}
+	Int(int y)
+	{
+		x = y;
+	}
+	void display()
+	{
+		cout << x << endl;
+	}
+	void add(Int a, Int b)
+	{
+		x= a.x + b.x;
+	}
+};
+
+int main()
+{
+	Int a(3);
+	Int b(5);
+	Int c;
+	c.add(a, b);
+	c.display();
+}
